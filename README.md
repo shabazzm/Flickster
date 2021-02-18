@@ -8,7 +8,7 @@ Flickster is an app that allows users to browse movies from the [The Movie Datab
 ## Flickster Part 1
 
 ### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after after checking off completed user stories)
+- As a user who wants to browse movies available I want a responsive list showing a title, overview and eye catching picture. 
 
 #### REQUIRED (10pts)
 - [X] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
@@ -25,7 +25,7 @@ Flickster is an app that allows users to browse movies from the [The Movie Datab
 ### App Walkthough GIF
 `TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="App_Walkthrough_Flickster_1.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
