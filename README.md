@@ -9,7 +9,7 @@ Flickster is an app that allows users to browse movies from the [The Movie Datab
 
 ### User Stories
 - As a user who wants to browse movies available I want a responsive list showing a title, overview and eye catching picture. 
-
+- As a user who likes to use my phone in different orientations I want a pleasing interface in both portrait and landscape view mode. 
 #### REQUIRED (10pts)
 - [X] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
