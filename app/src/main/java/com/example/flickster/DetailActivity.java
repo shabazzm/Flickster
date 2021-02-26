@@ -60,6 +60,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         ratingBar.setRating((float)movie.getRating());
+        float compRating = (float)movie.getRating();
 
 
         AsyncHttpClient client = new AsyncHttpClient();
@@ -75,7 +76,7 @@ public class DetailActivity extends YouTubeBaseActivity {
                     }
                     String youTubeKey = results.getJSONObject(0).getString("key");
                     Log.d("DetailActivity", youTubeKey);
-                    initializeYoutube(youTubeKey);
+                    initializeYoutube(youTubeKey, compRating);
 
                 } catch (JSONException e) {
                     Log.e("DetailActivity", "Failed to parse",e);
@@ -91,13 +92,21 @@ public class DetailActivity extends YouTubeBaseActivity {
 
     }
 
-    private void initializeYoutube(final String youTubeKey) {
+    private void initializeYoutube(final String youTubeKey, float compRating) {
         youTubePlayerView.initialize(YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d("Detail Activity", "onInitializationSuccess");
-                // do any work here to cue video, play video, etc.
-                youTubePlayer.cueVideo(youTubeKey);
+
+                ratingBar = findViewById(R.id.ratingBar);
+
+                if(compRating <= 5.0){
+                    // do any work here to cue video, play video, etc.
+                    youTubePlayer.cueVideo(youTubeKey);
+                }else{
+                    youTubePlayer.loadVideo(youTubeKey);
+                }
+
 
             }
 
