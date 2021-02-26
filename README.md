@@ -7,6 +7,7 @@ Flickster is an app that allows users to browse movies from the [The Movie Datab
 - As a user I want to be able to view movies in App so that I do not have to go to a separate application to see a trailer
 - As a user who likes to catch all details I want to be able to watch the movie trailer in full landscape view so that I can
   fully experience the movie.
+- As a user who wants quick acccess to the latest popular movies I want popular movies to play immediately when I click on the details page. 
 
 #### REQUIRED (10pts)
 
